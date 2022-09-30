@@ -1,7 +1,6 @@
 ﻿namespace Portable_store
 {
-    public class Class1
+    internal class Store_database
     {
-
     }
 }

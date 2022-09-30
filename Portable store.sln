@@ -3,7 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portable store", "Portable store\Portable store.csproj", "{AA68BF60-D312-4962-ADB9-FB617D051594}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portable store", "Portable store\Portable store.csproj", "{AA68BF60-D312-4962-ADB9-FB617D051594}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portable store.Console", "Portable store.Console\Portable store.Console.csproj", "{518B4305-19F1-47A9-A6C6-5B35C82AE49E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portable store.GUI", "Portable store.GUI\Portable store.GUI.csproj", "{2ABBD6C3-F02D-44E0-981C-852D8A068D67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datas", "Datas", "{892DD9F6-D5D6-4B0E-A710-423BAB6F45A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{C7AF4DFA-D21E-4A39-9714-3FD593256B35}"
+	ProjectSection(SolutionItems) = preProject
+		Rufus.json = Rufus.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +26,22 @@ Global
 		{AA68BF60-D312-4962-ADB9-FB617D051594}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA68BF60-D312-4962-ADB9-FB617D051594}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA68BF60-D312-4962-ADB9-FB617D051594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{518B4305-19F1-47A9-A6C6-5B35C82AE49E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{518B4305-19F1-47A9-A6C6-5B35C82AE49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{518B4305-19F1-47A9-A6C6-5B35C82AE49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{518B4305-19F1-47A9-A6C6-5B35C82AE49E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ABBD6C3-F02D-44E0-981C-852D8A068D67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ABBD6C3-F02D-44E0-981C-852D8A068D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ABBD6C3-F02D-44E0-981C-852D8A068D67}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2ABBD6C3-F02D-44E0-981C-852D8A068D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ABBD6C3-F02D-44E0-981C-852D8A068D67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ABBD6C3-F02D-44E0-981C-852D8A068D67}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C7AF4DFA-D21E-4A39-9714-3FD593256B35} = {892DD9F6-D5D6-4B0E-A710-423BAB6F45A9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {42E00D1E-DB4C-4568-9D2F-B3EE0558BE34}

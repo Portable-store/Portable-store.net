@@ -1,0 +1,27 @@
+{
+  "Name": "pbatard/rufus",
+  "Type": "GitHub",
+
+  "Versions": [
+    {
+      "Architecture": "AMD64",
+      "URI": "rufus-3.20.exe",
+      "Operating_systems": "Windows"
+    },
+    {
+      "Architecture": "x86",
+      "URI": "rufus-3.20.exe",
+      "Operating_systems": "Windows"
+    },
+    {
+      "Architecture": "ARM",
+      "URI": "rufus-3.20_arm.exe",
+      "Operating_systems": "Windows"
+    },
+    {
+      "Architecture": "ARM64",
+      "URI": "rufus-3.20_arm64.exe",
+      "Operating_systems": "Windows"
+    }
+  ]
+}
