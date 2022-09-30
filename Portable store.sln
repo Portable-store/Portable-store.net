@@ -9,11 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portable store.Console", "P
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portable store.GUI", "Portable store.GUI\Portable store.GUI.csproj", "{2ABBD6C3-F02D-44E0-981C-852D8A068D67}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datas", "Datas", "{892DD9F6-D5D6-4B0E-A710-423BAB6F45A9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datas", "Datas", "{4CF77833-4D47-4909-991A-02DE611F2000}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{C7AF4DFA-D21E-4A39-9714-3FD593256B35}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{3378CA56-43F3-4194-AF70-6D0775E4E390}"
 	ProjectSection(SolutionItems) = preProject
-		Rufus.json = Rufus.json
+		Datas\Applications\Model.json = Datas\Applications\Model.json
+		Datas\Applications\Rufus.json = Datas\Applications\Rufus.json
 	EndProjectSection
 EndProject
 Global
@@ -41,7 +42,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{C7AF4DFA-D21E-4A39-9714-3FD593256B35} = {892DD9F6-D5D6-4B0E-A710-423BAB6F45A9}
+		{3378CA56-43F3-4194-AF70-6D0775E4E390} = {4CF77833-4D47-4909-991A-02DE611F2000}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {42E00D1E-DB4C-4568-9D2F-B3EE0558BE34}
