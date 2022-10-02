@@ -1,28 +1,28 @@
 {
   "Name": "pbatard/rufus",
-  "Icon_uri": "",
-  "Type": "GitHub",
+  "Icon uri": "https://rufus.ie/pics/rufus-128.png",
+  "Source type": "GitHub",
 
   "Versions": [
     {
       "Architecture": "AMD64",
-      "URI": "rufus-3.20.exe",
-      "Operating_systems": "Windows"
+      "URI": "rufus-*.exe",
+      "Operating system": "Windows"
     },
     {
       "Architecture": "x86",
-      "URI": "rufus-3.20.exe",
-      "Operating_systems": "Windows"
+      "URI": "rufus-*exe",
+      "Operating system": "Windows"
     },
     {
       "Architecture": "ARM",
-      "URI": "rufus-3.20_arm.exe",
-      "Operating_systems": "Windows"
+      "URI": "rufus-*_arm.exe",
+      "Operating system": "Windows"
     },
     {
       "Architecture": "ARM64",
-      "URI": "rufus-3.20_arm64.exe",
-      "Operating_systems": "Windows"
+      "URI": "rufus-*_arm64.exe",
+      "Operating system": "Windows"
     }
   ]
 }
