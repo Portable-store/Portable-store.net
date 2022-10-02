@@ -1,19 +1,17 @@
 {
-  "Name": "Tom60chat/Portable-store", // Will be displayed as "Portable store"
-  "Icon_uri": "https://avatars.githubusercontent.com/u/25564492", // The app icon
-  "Type": "GitHub", // Where he come from
-  "Official website": "https://github.com/Tom60chat/", // The app or author website
-  "Author name": "Tom", // The author/brand of the app
-  "UUID": "75f0b5e5-1c07-4564-b02e-118d5df51d32", // The UUID/GUID randomly generated
+  "Name": "Tom60chat/Portable-store", # Will be displayed as "Portable store" by "Tom60chat".
+  "Icon uri": "https://avatars.githubusercontent.com/u/25564492", #The app icon
+  "Description": "This is a model", # The app description
+  "Source type": "GitHub", # Where he come from
 
-  // Verions of the app
+  # Verions of the app
   "Versions": [
     {
-      "Name": "", // Version name if subversion available
-      "Architecture": "AMD64", // The architecture of the app
-      "URI": "Portable-store.x64.win.exe", // The asset name in release section of GitHub
-      "Executable path": "", // Executable path but we don't need that here
-      "Operating systems": "Windows" // OS of the app
+      "Name": "", # Version name if subversion available
+      "Architecture": "AMD64", # The architecture of the app
+      "URI": "Portable-store.x64.win.exe", /# The asset name in release section of GitHub
+      "Executable path": "", # Executable path but we don't need that here
+      "Operating system": "Windows" # OS of the app
     }
   ]
 }
