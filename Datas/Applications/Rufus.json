@@ -6,7 +6,7 @@
   "Versions": [
     {
       "Architecture": "X86",
-      "URI": "rufus-*pexe",
+      "URI": "rufus-*p.exe",
       "Operating system": "Windows"
     },
     {
