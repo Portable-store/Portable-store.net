@@ -5,13 +5,8 @@
 
   "Versions": [
     {
-      "Architecture": "AMD64",
-      "URI": "rufus-*.exe",
-      "Operating system": "Windows"
-    },
-    {
       "Architecture": "x86",
-      "URI": "rufus-*exe",
+      "URI": "rufus-*pexe",
       "Operating system": "Windows"
     },
     {
