@@ -5,17 +5,17 @@
 
   "Versions": [
     {
-      "Architecture": "x86",
+      "Architecture": "X86",
       "URI": "rufus-*pexe",
       "Operating system": "Windows"
     },
     {
-      "Architecture": "ARM",
+      "Architecture": "Arm",
       "URI": "rufus-*_arm.exe",
       "Operating system": "Windows"
     },
     {
-      "Architecture": "ARM64",
+      "Architecture": "Arm64",
       "URI": "rufus-*_arm64.exe",
       "Operating system": "Windows"
     }
