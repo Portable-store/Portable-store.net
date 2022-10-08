@@ -1,5 +1,8 @@
-﻿namespace Portable_store.Enums
+﻿using System.Text.Json.Serialization;
+
+namespace Portable_store.Enums
 {
+    [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum Source_type_Enum
     {
         /// <summary> Application inside a GitHub repository </summary>

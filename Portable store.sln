@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Application
 		Datas\Applications\Rufus.json = Datas\Applications\Rufus.json
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portable store.Test", "Portable store.Test\Portable store.Test.csproj", "{531BAAAA-4D99-48C5-B27D-43C3144EABB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{2ABBD6C3-F02D-44E0-981C-852D8A068D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ABBD6C3-F02D-44E0-981C-852D8A068D67}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2ABBD6C3-F02D-44E0-981C-852D8A068D67}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{531BAAAA-4D99-48C5-B27D-43C3144EABB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{531BAAAA-4D99-48C5-B27D-43C3144EABB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{531BAAAA-4D99-48C5-B27D-43C3144EABB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{531BAAAA-4D99-48C5-B27D-43C3144EABB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,13 +1,46 @@
 ﻿using Portable_store.Enums;
+using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Portable_store.Models
 {
+    [Serializable]
     public class Application_Model
     {
+        #region Constructors
+        public Application_Model(string display_name, string name, string description, Source_type_Enum sourceType, Application_version_Model[] versions)
+        {
+            Name = name ?? throw new ArgumentNullException(nameof(name));
+            Display_name = display_name ?? name.Split('/').Last();
+            Description = description ?? "";
+            Source_type = sourceType;
+            Versions = versions ?? throw new ArgumentNullException(nameof(versions));
+        }
+
+        public Application_Model(string display_name, string name, Source_type_Enum sourceType, Application_version_Model[] versions) :
+            this(display_name, name, "", sourceType, versions) { }
+
+        public Application_Model() : this("", "", "", Source_type_Enum.DirectLink, Array.Empty<Application_version_Model>()) { }
+        #endregion
+
+        #region Properties
         /// <summary>
         /// The application name or repossitory name
         /// </summary>
         public string Name { get; set; }
+
+        /// <summary>
+        /// The application display name
+        /// </summary>
+        [JsonPropertyName("Display name")]
+        public string Display_name { get; set; }
+
+        /// <summary>
+        /// The application icon uri
+        /// </summary>
+        [JsonPropertyName("Icon uri")]
+        public string Icon_uri { get; set; }
 
         /// <summary>
         /// The application description.
@@ -18,11 +51,42 @@ namespace Portable_store.Models
         /// <summary>
         /// The application source
         /// </summary>
-        public Source_type_Enum SourceType { get; set; }
+        [JsonPropertyName("Source type")]
+        public Source_type_Enum Source_type { get; set; }
 
         /// <summary>
         /// The applications versions
         /// </summary>
-        public Application_version_Model[] Versions;
+        public Application_version_Model[] Versions { get; set; }
+        #endregion
+
+        #region Methods
+        public string To_JSON() =>
+            JsonSerializer.Serialize(this, Metadata.JSON_option);
+
+        public override string ToString() => Name;
+
+        public string To_long_string()
+        {
+            var versions_string = new StringBuilder();
+
+            foreach (var version in Versions)
+                versions_string.AppendLine("\t" + version
+                    .To_long_string()
+                    .Replace(Environment.NewLine, Environment.NewLine + "\t") +
+                    Environment.NewLine);
+
+            // Remove the last new line
+            versions_string.Remove(versions_string.Length -2, 2);
+
+            return "Name: " + Name + Environment.NewLine +
+                   "Display name: " + Display_name + Environment.NewLine +
+                   "Icon uri: " + Icon_uri + Environment.NewLine +
+                   "Description: " + Description + Environment.NewLine +
+                   "Source type: " + Source_type + Environment.NewLine +
+                   "Versions : " + Environment.NewLine +
+                       versions_string.ToString();
+        }
+        #endregion
     }
 }

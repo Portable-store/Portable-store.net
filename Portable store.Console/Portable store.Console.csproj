@@ -2,10 +2,46 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
     <RootNamespace>Portable_store.Console</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>Portable store Console</Title>
+    <Authors>Tom OLIVIER</Authors>
+    <Company />
+    <Product>Portable store</Product>
+    <Copyright>Copyright (c) 2022, Tom OLIVIER. All rights reserved.</Copyright>
+    <RepositoryUrl>https://github.com/Tom60chat/Portable-store</RepositoryUrl>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageIcon>Logo v1 128px.png</PackageIcon>
+    <ApplicationIcon>Logo v1 48px.ico</ApplicationIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>store, portabla, dotnet, easy, market</PackageTags>
+    <AssemblyName>pstore</AssemblyName>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Logo v1 48px.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\Assets\Logos\Logo v1 128px.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Portable store\Portable store.csproj" />
+  </ItemGroup>
 
 </Project>

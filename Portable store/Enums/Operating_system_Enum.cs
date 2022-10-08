@@ -1,22 +1,25 @@
-﻿namespace Portable_store.Enums
+﻿using System.Text.Json.Serialization;
+
+namespace Portable_store.Enums
 {
     /// <summary>
     /// List of supported operating system by the store.
     /// </summary>
+    [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum Operating_system_Enum
     {
-        /// <summary>
-        /// Cross-platform
-        /// </summary>
-        None,
         /// <summary>
         /// The operating system is Windows NT or later.
         /// </summary>
         Windows,
         /// <summary>
-        /// The operating system is UNIX.
+        /// The operating system is Linux.
         /// </summary>
-        UNIX,
+        Linux,
+        /// <summary>
+        /// The operating system is FreeBSD.
+        /// </summary>
+        FreeBSD,
         /// <summary>
         /// The operating system is Macintosh.
         /// </summary>
