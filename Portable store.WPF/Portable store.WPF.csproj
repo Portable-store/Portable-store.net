@@ -1,36 +1,35 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
-    <RootNamespace>Portable_store.Console</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Portable_store.WPF</RootNamespace>
     <Nullable>enable</Nullable>
-    <Title>Portable store Console</Title>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64;x86;ARM64</Platforms>
+    <ApplicationIcon>Assets\Logo v1 48px.ico</ApplicationIcon>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+    <Title>Portable store WPF</Title>
     <Authors>Tom OLIVIER</Authors>
-    <Company />
-    <Product>Portable store</Product>
+    <Product>Portable stored</Product>
     <Copyright>Copyright (c) 2022, Tom OLIVIER. All rights reserved.</Copyright>
+    <PackageIcon>Logo v1 128px.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/Tom60chat/Portable-store</RepositoryUrl>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <PackageIcon>Logo v1 128px.png</PackageIcon>
-    <ApplicationIcon>Logo v1 48px.ico</ApplicationIcon>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageTags>store, portabla, dotnet, easy, market</PackageTags>
-    <AssemblyName>pstore</AssemblyName>
-    <Platforms>AnyCPU;x64;x86;ARM64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Logo v1 48px.ico" />
+    <Content Include="Assets\Logo v1 48px.ico" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\Assets\Logos\Logo v1 128px.png">
+    <Resource Include="..\Assets\Logos\Logo v1 128px.png" Link="Assets\Logo v1 128px.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
-    </None>
+    </Resource>
     <None Include="..\LICENSE.txt">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>

@@ -181,7 +181,7 @@ namespace Portable_store
         {
             Folders_integrety_check();
 
-            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            /*if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
                 var shortcut_path = Path.Combine(Applications_folder, metadata.Display_name + ".lnk");
                 var shell = new IWshRuntimeLibrary.WshShell();
@@ -193,7 +193,7 @@ namespace Portable_store
                 shortcut.Save();
             }
             else
-                throw new NotImplementedException("Shortcut not implemented yet on this platform");
+                throw new NotImplementedException("Shortcut not implemented yet on this platform");*/
 
         }
 
