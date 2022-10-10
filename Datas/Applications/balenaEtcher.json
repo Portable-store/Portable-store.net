@@ -1,0 +1,13 @@
+{
+  "Name": "balena-io/etcher",
+  "Icon uri": "https://raw.githubusercontent.com/balena-io/etcher/master/assets/icon.png",
+  "Source type": "GitHub",
+
+  "Versions": [
+    {
+      "Architecture": "x86",
+      "URI": "balenaEtcher-Portable-*.exe",
+      "Operating system": "Windows"
+    }
+  ]
+}
