@@ -1,0 +1,34 @@
+{
+  "Name": "jetbrain/phpstorm,
+  "Icon uri": "https://upload.wikimedia.org/wikipedia/commons/c/c9/PhpStorm_Icon.svg",
+  "Description": "The Lightning-Smart PHP IDE",
+  "Source type": "RedirectLink",
+
+  "Versions": [
+    {
+      "Architecture": "x64"
+      "URI": "https://www.jetbrains.com/fr-fr/phpstorm/download/download-thanks.html?platform=windowsZip",
+      "Executable path": "bin/phpstorm64.exe",
+      "Operating system": "Windows"
+    },
+    {
+      "Architecture": "x64"
+      "URI": "https://www.jetbrains.com/phpstorm/download/download-thanks.html?platform=mac",
+      "Executable path": "",
+      "Operating system": "macOS"
+    },
+    {
+      "Architecture": "Arm64"
+      "URI": "https://www.jetbrains.com/phpstorm/download/download-thanks.html?platform=macM1",
+      "Executable path": "",
+      "Operating system": "macOS"
+    },
+    {
+      "Architecture": "x64"
+      "URI": "https://www.jetbrains.com/phpstorm/download/download-thanks.html?platform=linux",
+      "Executable path": "bin/phpstorm64",
+      "Operating system": "Linux"
+    }
+    
+  ]
+}
