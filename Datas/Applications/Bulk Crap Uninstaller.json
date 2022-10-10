@@ -1,0 +1,14 @@
+{
+  "Name": "Klocman/Bulk-Crap-Uninstaller",
+  "Icon uri": "https://raw.githubusercontent.com/Klocman/Bulk-Crap-Uninstaller/master/source/BulkCrapUninstaller/Resources/3.png",
+  "Source type": "GitHub",
+
+  "Versions": [
+    {
+      "Architecture": "x86",
+      "URI": "BCUninstaller_5.4_portable.zip",
+      "Executable path": "BCUninstaller.exe",
+      "Operating system": "Windows"
+    }
+  ]
+}
