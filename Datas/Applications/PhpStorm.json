@@ -1,7 +1,7 @@
 {
-  "Name": "jetbrain/phpstorm,
+  "Name": "jetbrain/phpstorm",
   "Icon uri": "https://upload.wikimedia.org/wikipedia/commons/c/c9/PhpStorm_Icon.svg",
-  "Description": "The Lightning-Smart PHP IDE",
+  "Description": "The Lightning-Smart PHP IDE\nhttps://www.jetbrains.com/",
   "Source type": "RedirectLink",
 
   "Versions": [
