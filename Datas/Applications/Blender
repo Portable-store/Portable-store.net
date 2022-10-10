@@ -1,0 +1,33 @@
+{
+  "Name": "blender/blender",
+  "Icon uri": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg",
+  "Description": "https://www.blender.org/",
+  "Source type": "RedirectLink",
+
+  "Versions": [
+    {
+      "Architecture": "x64",
+      "URI": "http://ftp.halifax.rwth-aachen.de/blender/release/Blender*/blender-*-windows-x64.zip",
+      #"Executable path": "",
+      "Operating system": "Windows"
+    },
+    {
+      "Architecture": "x64",
+      "URI": "http://ftp.halifax.rwth-aachen.de/blender/release/Blender3.3/blender-3.3.1-macos-x64.dmg",
+      #"Executable path": "",
+      "Operating system": "macOS"
+    },
+    {
+      "Architecture": "ARM64",
+      "URI": "http://ftp.halifax.rwth-aachen.de/blender/release/Blender3.3/blender-3.3.1-macos-arm64.dmg",
+      #"Executable path": "",
+      "Operating system": "macOS"
+    },
+    {
+      "Architecture": "x64",
+      "URI": "http://ftp.halifax.rwth-aachen.de/blender/release/Blender3.3/blender-3.3.1-linux-x64.tar.xz",
+      #"Executable path": "",
+      "Operating system": "Linux"
+    }
+  ]
+}
