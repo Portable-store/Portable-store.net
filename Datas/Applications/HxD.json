@@ -5,15 +5,9 @@
 
   "Versions": [
     {
-      "Architecture": "x64",
+      "Architecture": "x86, x64",
       "URI": "https://mh-nexus.de/downloads/HxDSetup.zip",
-      "Executable path": "HxD64.exe",
-      "Operating system": "Windows"
-    },
-    {
-      "Architecture": "x86",
-      "URI": "https://mh-nexus.de/downloads/HxDSetup.zip",
-      "Executable path": "HxD32.exe",
+      "Executable path": "HxD32.exe, HxD64.exe",
       "Operating system": "Windows"
     }
   ]
