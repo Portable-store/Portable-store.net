@@ -6,7 +6,7 @@
   "Versions": [
     {
       "Architecture": "x86, x64",
-      "URI": "BCUninstaller_5.4_portable.zip",
+      "URI": "BCUninstaller_*_portable.zip",
       "Executable path": "BCUninstaller.exe",
       "Operating system": "Windows"
     }
