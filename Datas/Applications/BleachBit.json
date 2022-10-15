@@ -7,7 +7,7 @@
   "Versions": [
     {
       "Architecture": "x86",
-      "URI": "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-portable.zip",
+      "URI": "https://download.bleachbit.org/BleachBit-4.4.2-portable.zip",
       "Executable path": "bleachbit.exe",
       "Operating system": "Windows"
     }
