@@ -1,6 +1,7 @@
 {
-  "Name": "Tom60chat/Portable-store",
+  "Name": "anydesk/AnyDesk",
   "Description": "Access any device at any time. From anywhere. Always secure and fast.\n\nhttps://anydesk.com/",
+  "Icon uri": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.anydesk.Anydesk.png"
   "Source type": "RedirectLink",
 
   "Versions": [
