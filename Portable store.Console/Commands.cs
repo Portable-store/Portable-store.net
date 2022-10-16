@@ -27,7 +27,7 @@ namespace Portable_store.Console
                 else
                     foreach (var application_metadata in applications_metadata)
                     {
-                        var version = Metadata.Get_compatible_version(application_metadata).First();
+                        var version = Metadata.Get_compatible_versions(application_metadata).First();
 
                         success += await Store.Download_Async(application_metadata, version, progress) ? 1 : 0;
                     }
@@ -147,7 +147,7 @@ namespace Portable_store.Console
         {
             ConsoleHelper.WriteLine("Refreshing cache...");
 
-            ConsoleHelper.WriteLine(Store.Refresh() ?
+            ConsoleHelper.WriteLine(await Store.Refresh_Async() ?
                 "Cache refreshed!" :
                 "An error as ocurred!");
         }
@@ -173,7 +173,7 @@ namespace Portable_store.Console
                     ConsoleHelper.WriteLine(name + " was not found");
                 else
                     foreach (var application_info in applications_info)
-                        success += Library.Run_Async(application_info, progress) ? 1 : 0;
+                        success += Library.Run(application_info, progress) ? 1 : 0;
             }
 
 
@@ -194,7 +194,7 @@ namespace Portable_store.Console
 
             foreach (var name in names)
             {
-                var new_application_metadata = new Application_Model
+                var new_application_metadata = new Application_metadata_Model
                 {
                     Name = ConsoleHelper.Ask("Name"),
                     Display_name = name,

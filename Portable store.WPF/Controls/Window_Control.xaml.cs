@@ -14,11 +14,12 @@ namespace Portable_store.WPF.Controls
             InitializeComponent();
 
             Window.StateChanged += Window_State_changed;
+            Refresh_maximize_restore_Button();
         }
         #endregion
 
         #region Properties
-        private static Window Window => Application.Current.MainWindow;
+        private static Window Window => System.Windows.Application.Current.MainWindow;
         #endregion
 
         #region Methods

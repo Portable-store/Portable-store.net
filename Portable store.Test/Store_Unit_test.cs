@@ -19,9 +19,9 @@ namespace Portable_store.Test
 
         #region Methods
         [Theory]
-        [InlineData("*")]
-        [InlineData("Rufus")]
-        public async void Download(string app_name)
+        [InlineData("*", true)]
+        [InlineData("Rufus", false)]
+        public async void Download(string app_name, bool should_fail)
         {
             var progress = new Progress<Progress_info_Model>(p =>
             {
@@ -33,17 +33,20 @@ namespace Portable_store.Test
 
             foreach (var metadata in metadatas)
             {
-                var version = Metadata.Get_compatible_version(metadata).First();
+                var version = Metadata.Get_compatible_versions(metadata).First();
                 success += await Store.Download_Async(metadata, version, progress) ? 1 : 0;
             }
 
-            Assert.True(success == metadatas.Count);
+            if (should_fail)
+                Assert.True(success < metadatas.Count);
+            else
+                Assert.True(success == metadatas.Count);
         }
 
         [Theory]
-        [InlineData("*")]
-        [InlineData("Rufus")]
-        public async void Search(string app_name)
+        [InlineData("*", true)]
+        [InlineData("Rufus", false)]
+        public async void Search(string app_name, bool should_fail)
         {
             var progress = new Progress<Progress_info_Model>(p =>
             {
@@ -55,32 +58,44 @@ namespace Portable_store.Test
             //Output
             output.WriteLine(string.Join(", ", metadatas));
 
-            Assert.True(metadatas.Count > 0);
+
+            if (should_fail)
+                Assert.True(metadatas.Count == 0);
+            else
+                Assert.True(metadatas.Count > 0);
         }
 
         [Theory]
-        [InlineData("*")]
-        [InlineData("Rufus")]
-        public async void Update(string app_name)
+        [InlineData("*", true)]
+        [InlineData("Rufus", false)]
+        public async void Update(string app_name, bool should_fail)
         {
-            var progress = new Progress<Progress_info_Model>(p =>
+            /*var progress = new Progress<Progress_info_Model>(p =>
             {
                 output.WriteLine(p.Details);
             });
 
-            var metadatas = await Store.Update_Async(app_name, progress);
+            var metadatas = await Store.Search_Async(app_name, progress);
+            int success = 0;
+
+            foreach (var metadata in metadatas)
+            {
+                var version = Metadata.Get_compatible_version(metadata).First();
+                success += await Store.Update_Async(metadata, progress) ? 1 : 0;
+            }
+
 
             //Output
             //output.WriteLine(string.Join(", ", metadatas));
 
-            Assert.True(metadatas);
+            Assert.True(metadatas != should_fail);*/
         }
 
 
         [Fact]
-        public void Refresh()
+        public async void Refresh()
         {
-            Assert.True( Store.Refresh() );
+            Assert.True( await Store.Refresh_Async() );
         }
         #endregion
     }

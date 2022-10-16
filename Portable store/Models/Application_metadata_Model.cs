@@ -6,22 +6,23 @@ using System.Text.Json.Serialization;
 namespace Portable_store.Models
 {
     [Serializable]
-    public class Application_Model
+    public class Application_metadata_Model
     {
         #region Constructors
-        public Application_Model(string display_name, string name, string description, Source_type_Enum sourceType, Application_version_Model[] versions)
+        public Application_metadata_Model(string name, string display_name, string icon_uri, Application_description descriptions, Source_type_Enum sourceType, Application_version_Model[] versions)
         {
             Name = name ?? throw new ArgumentNullException(nameof(name));
             Display_name = display_name ?? name.Split('/').Last();
-            Description = description ?? "";
+            Descriptions = descriptions ?? new Application_description();
+            Icon_uri = icon_uri ?? "";
             Source_type = sourceType;
             Versions = versions ?? throw new ArgumentNullException(nameof(versions));
         }
 
-        public Application_Model(string display_name, string name, Source_type_Enum sourceType, Application_version_Model[] versions) :
-            this(display_name, name, "", sourceType, versions) { }
+        public Application_metadata_Model(string name, string display_name, Source_type_Enum sourceType, Application_version_Model[] versions) :
+            this(display_name, name, "", new(), sourceType, versions) { }
 
-        public Application_Model() : this("", "", "", Source_type_Enum.DirectLink, Array.Empty<Application_version_Model>()) { }
+        public Application_metadata_Model() : this("", "", "", new(), Source_type_Enum.DirectLink, Array.Empty<Application_version_Model>()) { }
         #endregion
 
         #region Properties
@@ -46,7 +47,7 @@ namespace Portable_store.Models
         /// The application description.
         /// If empty and the source is a repossitory the repossitory description can be use.
         /// </summary>
-        public string Description { get; set; }
+        public Application_description Descriptions { get; set; }
 
         /// <summary>
         /// The application source
@@ -82,7 +83,7 @@ namespace Portable_store.Models
             return "Name: " + Name + Environment.NewLine +
                    "Display name: " + Display_name + Environment.NewLine +
                    "Icon uri: " + Icon_uri + Environment.NewLine +
-                   "Description: " + Description + Environment.NewLine +
+                   "Descriptions: " + Descriptions.ToString() + Environment.NewLine +
                    "Source type: " + Source_type + Environment.NewLine +
                    "Versions : " + Environment.NewLine +
                        versions_string.ToString();

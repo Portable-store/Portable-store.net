@@ -28,7 +28,7 @@ namespace Portable_store.Test
                 output.WriteLine(p.Details);
             });
 
-            var metadata = new Application_Model(
+            var metadata = new Application_metadata_Model(
                 "Test",
                 "This is a test metadata!",
                 Source_type_Enum.DirectLink,
@@ -55,7 +55,7 @@ namespace Portable_store.Test
 
 
         [Theory]
-        [InlineData("C:\\Users\\Tom60\\Nextcloud2\\Documents\\Projects\\dotnet\\Portable store\\Portable store.Test\\bin\\Debug\\net6.0\\AppData\\Caches\\Metadatas\\Rufus.json")]
+        [InlineData(".\\AppData\\Caches\\Metadatas\\Rufus.json")]
         public async void Read(string metadata_path)
         {
             var progress = new Progress<Progress_info_Model>(p =>

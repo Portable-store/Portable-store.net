@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Portable_store.WPF.Pages;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -26,8 +28,21 @@ namespace Portable_store.WPF.Windows
         {
             InitializeComponent();
 
-            var test = new Portable_store.WPF.Controls.Window_Control();
+            // For watever reason VS won't compile any user control inside xaml
+            var window_control = new Controls.Window_Control
+            {
+                HorizontalAlignment = HorizontalAlignment.Right
+            };
+            window_control.SetValue(Grid.ColumnProperty, 2);
+
+            TopBar.Children.Add(window_control);
+
+            application_list_page = new();
+
+            refresh_Store();
         }
+
+        Application_list_Page application_list_page;
 
         protected override void OnSourceInitialized(EventArgs e)
         {
@@ -68,6 +83,18 @@ namespace Portable_store.WPF.Windows
             }
 
             return IntPtr.Zero;
+        }
+
+        private async void refresh_Store()
+        {
+            await Store.Refresh_Async();
+            Debug.WriteLine("Refresh done!");
+        }
+
+        private async void Search_Box_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            await application_list_page.Search_Async(Search_Box.Text);
+            Content_frame.Navigate(application_list_page);
         }
     }
 }

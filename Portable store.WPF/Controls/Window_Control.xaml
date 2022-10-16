@@ -10,74 +10,7 @@
              d:DesignHeight="32" d:DesignWidth="138" d:Background="White">
 
     <UserControl.Resources>
-        <Style x:Key="TitleBarButtonPathStyle" TargetType="Path">
-            <Setter Property="Width" Value="46" />
-            <Setter Property="Height" Value="32" />
-            <Setter Property="Stroke" Value="{Binding Path=Foreground,
-							     RelativeSource={RelativeSource AncestorType={x:Type Button}}}" />
-            <Setter Property="StrokeThickness" Value="1" />
-        </Style>
-        
-        <Style x:Key="TitleBarButtonBorderContentPresenterStyle" TargetType="ContentPresenter">
-            <Setter Property="Margin" Value="0" />
-            <Setter Property="HorizontalAlignment" Value="Center" />
-            <Setter Property="VerticalAlignment" Value="Center" />
-            <Setter Property="Focusable" Value="False" />
-            <Setter Property="RecognizesAccessKey" Value="True" />
-        </Style>
-
-        <Style x:Key="TitleBarButtonBorderStyle" TargetType="Border">
-            <Setter Property="Background" Value="Transparent" />
-            <Setter Property="BorderThickness" Value="0" />
-            <Setter Property="SnapsToDevicePixels" Value="true" />
-        </Style>
-
-        <Style x:Key="TitleBarButtonStyle" TargetType="Button">
-            <Setter Property="Foreground" Value="{DynamicResource WindowTextBrush}" />
-            <Setter Property="Padding" Value="0" />
-            <Setter Property="WindowChrome.IsHitTestVisibleInChrome" Value="True" />
-            <Setter Property="IsTabStop" Value="False" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type Button}">
-                        <Border x:Name="Border" Style="{StaticResource TitleBarButtonBorderStyle}">
-                            <ContentPresenter x:Name="Content_presenter" Style="{StaticResource TitleBarButtonBorderContentPresenterStyle}" />
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="true">
-                                <Setter TargetName="Border" Property="Background" Value="{DynamicResource MouseOverOverlayBackgroundBrush}" />
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="true">
-                                <Setter TargetName="Border" Property="Background" Value="{DynamicResource PressedOverlayBackgroundBrush}" />
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <Style x:Key="TitleBarCloseButtonStyle" TargetType="Button" BasedOn="{StaticResource TitleBarButtonStyle}">
-            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type Button}">
-                        <Border x:Name="Border" Style="{StaticResource TitleBarButtonBorderStyle}" >
-                            <ContentPresenter x:Name="Content_presenter" Style="{StaticResource TitleBarButtonBorderContentPresenterStyle}" />
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="true">
-                                <Setter TargetName="Border" Property="Background" Value="{DynamicResource MouseOverWindowCloseButtonBackgroundBrush}" />
-                                <Setter Property="Foreground" Value="{DynamicResource MouseOverWindowCloseButtonForegroundBrush}" />
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="true">
-                                <Setter TargetName="Border" Property="Background" Value="{DynamicResource PressedWindowCloseButtonBackgroundBrush}" />
-                                <Setter Property="Foreground" Value="{DynamicResource MouseOverWindowCloseButtonForegroundBrush}" />
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
+        <ResourceDictionary Source="/Styles/Window_Control_Style.xaml" />
     </UserControl.Resources>
 
     <Grid>
