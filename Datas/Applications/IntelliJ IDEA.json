@@ -1,0 +1,33 @@
+{
+  "Name": "jetbrain/idea",
+  "Icon uri": "https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg",
+  "Description": "Capable and Ergonomic IDE\n\nhttps://www.jetbrains.com/",
+  "Source type": "RedirectLink",
+
+  "Versions": [
+    {
+      "Architecture": "x64"
+      "URI": "https://www.jetbrains.com/idea/download/download-thanks.html?platform=windowsZip",
+      "Executable path": "bin/idea.exe",
+      "Operating system": "Windows"
+    },
+    {
+      "Architecture": "x64"
+      "URI": "https://www.jetbrains.com/idea/download/download-thanks.html?platform=windowsZip",
+      "Executable path": "",
+      "Operating system": "macOS"
+    },
+    {
+      "Architecture": "Arm64"
+      "URI": "https://www.jetbrains.com/idea/download/download-thanks.html?platform=macM1",
+      "Executable path": "",
+      "Operating system": "macOS"
+    },
+    {
+      "Architecture": "x64"
+      "URI": "https://www.jetbrains.com/idea/download/download-thanks.html?platform=linux",
+      "Executable path": "bin/idea",
+      "Operating system": "Linux"
+    }    
+  ]
+}

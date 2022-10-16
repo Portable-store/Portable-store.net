@@ -1,0 +1,29 @@
+{
+  "Name": "anydesk/AnyDesk",
+  "Description": "Access any device at any time. From anywhere. Always secure and fast.\n\nhttps://anydesk.com/",
+  "Icon uri": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.anydesk.Anydesk.png"
+  "Source type": "RedirectLink",
+
+  "Versions": [
+    {
+      "Architecture": "x86",
+      "URI": "https://anydesk.com/fr/downloads/thank-you?dv=win_exe",
+      "Operating system": "Windows"
+    },
+    {
+      "Architecture": "x64",
+      "URI": "https://anydesk.com/_static/img/logos/anydesk-logo-white-red-ec4e3a.png",
+      "Operating system": "macOS"
+    },
+    {
+      "Architecture": "x64",
+      "URI": "https://anydesk.com/en/downloads/thank-you?dv=linux_64",
+      "Operating system": "Linux"
+    },
+    {
+      "Architecture": "x64",
+      "URI": "https://anydesk.com/en/downloads/thank-you?dv=freebsd_64",
+      "Operating system": "FreeBSD"
+    }
+  ]
+}

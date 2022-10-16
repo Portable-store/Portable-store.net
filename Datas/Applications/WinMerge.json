@@ -1,0 +1,31 @@
+{
+  "Name": " WinMerge/winmerge",
+  "Source type": "GitHub",
+
+  "Versions": [
+    {
+      "Architecture": "x64",
+      "URI": "winmerge-*-x64-exe.zip ",
+      "Executable path": "WinMergeU.exe",
+      "Operating system": "Windows"
+    },
+    {
+      "Architecture": "x86",
+      "URI": "winmerge-*-exe.zip",
+      "Executable path": "WinMergeU.exe",
+      "Operating system": "Windows"
+    },
+    {
+      "Architecture": "ARM",
+      "URI": "winmerge-*-ARM-exe.zip",
+      "Executable path": "WinMergeU.exe",
+      "Operating system": "Windows"
+    },
+    {
+      "Architecture": "ARM64",
+      "URI": "winmerge-*-ARM64-exe.zip ",
+      "Executable path": "WinMergeU.exe",
+      "Operating system": "Windows"
+    }
+  ]
+}

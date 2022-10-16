@@ -1,0 +1,19 @@
+{
+  "Name": "notepad-plus-plus/notepad-plus-plus",
+  "Source type": "GitHub",
+
+  "Versions": [
+    {
+      "Architecture": "x86",
+      "URI": "npp.*.portable.7z",
+      "Executable path": "notepad++.exe",
+      "Operating system": "Windows"
+    },
+    {
+      "Architecture": "arm64",
+      "URI": "npp.*.Installer.arm64.exe",
+      "Executable path": "notepad++.exe",
+      "Operating system": "Windows"
+    }
+  ]
+}

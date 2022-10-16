@@ -1,0 +1,24 @@
+{
+  "Name": "PuTTY",
+  "Icon uri": "https://upload.wikimedia.org/wikipedia/commons/e/e7/PuTTY_Icon.svg",
+  "Description": "PuTTY is a free implementation of SSH and Telnet for Windows and Unix platforms, along with an xterm terminal emulator. It is written and maintained primarily by Simon Tatham.\n\nhttps://www.chiark.greenend.org.uk/~sgtatham/putty/",
+  "Source type": "DirectLink",
+
+  "Versions": [
+    {
+      "Architecture": "x64",
+      "URI": "https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe", 
+      "Operating system": "Windows"
+    },
+    {
+      "Architecture": "ARM64",
+      "URI": "https://the.earth.li/~sgtatham/putty/latest/wa64/putty.exe", 
+      "Operating system": "Windows"
+    },
+    {
+      "Architecture": "x86",
+      "URI": "https://the.earth.li/~sgtatham/putty/latest/w32/putty.exe", 
+      "Operating system": "Windows"
+    }
+  ]
+}

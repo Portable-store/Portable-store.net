@@ -1,0 +1,20 @@
+{
+  "Name": "mh-nexus/HxD",
+  "Description": "HxD is a carefully designed and fast hex editor which, additionally to raw disk editing and modifying of main memory (RAM), handles files of any size.\n\nThe easy to use interface offers features such as searching and replacing, exporting, checksums/digests, insertion of byte patterns, a file shredder, concatenation or splitting of files, statistics and much more.",
+  "Source type": "DirectLink",
+
+  "Versions": [
+    {
+      "Architecture": "x64",
+      "URI": "https://mh-nexus.de/downloads/HxDSetup.zip",
+      "Executable path": "HxD64.exe",
+      "Operating system": "Windows"
+    },
+    {
+      "Architecture": "x86",
+      "URI": "https://mh-nexus.de/downloads/HxDSetup.zip",
+      "Executable path": "HxD32.exe",
+      "Operating system": "Windows"
+    }
+  ]
+}
