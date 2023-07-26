@@ -2,6 +2,8 @@
 
 Allows you to quickly download portable applications, on restricted environments such as school or work computers.
 
+⚠ This project has ported in (rust)[https://github.com/orgs/Portable-store] ⚠
+
 Work on Windows, maybe linux and macos later.
 Can easily be ported to linux or macOS.
 
